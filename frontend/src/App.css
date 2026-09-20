@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+
+.form {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row select,
+.form-row input {
+  flex: 1;
+}
+
+.form button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.movies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.movie-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.movie-header h3 {
+  color: #333;
+  font-size: 1.3em;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.genre, .rating {
+  font-size: 0.95em;
+}
+
+.movie-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.movie-actions button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.movie-actions button:hover {
+  opacity: 0.8;
+}
+
+.status-btn {
+  background: #60a5fa;
+  color: white;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.empty {
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+  padding: 40px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+}
